@@ -30,7 +30,7 @@ All the data for the table is in `data.json`.
 
 The browsers are defined in the `browser` property. The logo for the browser must be in the `logos` directory and must be named `${browser.tag}.svg`.
 
-The APIs are defined in teh `api` property.
+The APIs are defined in the `api` property.
 
 If a “Details” button is clicked, a “dialog” is openend, showing the contents of `partials/${api.tag}_${browser.tag}.html`.
 

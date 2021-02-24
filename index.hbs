@@ -47,6 +47,7 @@ limitations under the License.
     body {
       max-width: 1280px;
       margin: 0 auto;
+      padding: 1rem;
     }
     .title, .intro{
       text-align: center;
@@ -272,6 +273,10 @@ limitations under the License.
       font-weight: bold !important;
       text-decoration: underline !important;
     }
+    #faq_container{
+    max-width: 80ch;
+    margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -359,6 +364,8 @@ limitations under the License.
       {{/each}}
     {{/with}}
   {{/each}}
+  <div id="faq_container">
+  <h1>About</h1>
   {{#each faq}}
     <div id="faq_{{tag}}">
       <h2>{{question}}</h2>
@@ -368,6 +375,7 @@ limitations under the License.
       {{/if}}
     </div>
   {{/each}}
+  </div>
   <footer>
     Maintained by <a href="https://twitter.com/voxpelli" target="_blank" rel="noopener noreferrer">VoxPelli</a>,
       source code & license in the <a href="https://github.com/voxpelli/webapicontroversy.com" target="_blank" rel="noopener noreferrer">repository</a> on GitHub, PR:s are much appreciated,
